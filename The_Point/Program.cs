@@ -22,7 +22,6 @@ public class Point
     public float x_Coord { get; }
     public float y_Coord { get; }
 
-
 public Point(float X_Coord, float Y_Coord)
     {
         x_Coord = X_Coord;
@@ -34,5 +33,4 @@ public Point()
         x_Coord = 0;
         y_Coord = 0;
     }
-
 }
