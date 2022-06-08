@@ -6,3 +6,33 @@ Goals:
 3) Each point is represented by a Y coordinate (Up/down from an origin point)
 */
 
+Point point_1 = new Point(2, 3);
+Point point_2 = new Point(-4,0);
+//Testing parameterless constructor
+Point point_3 = new Point();
+
+Console.WriteLine($"Point 1: ({point_1.x_Coord}, {point_1.y_Coord})");
+Console.WriteLine($"Point 2: ({point_2.x_Coord}, {point_2.y_Coord})");
+Console.WriteLine($"Point 3: ({point_3.x_Coord}, {point_3.y_Coord})");
+Console.WriteLine("Press any key to end the program");
+Console.ReadKey();
+
+public class Point
+{
+    public float x_Coord { get; }
+    public float y_Coord { get; }
+
+
+public Point(float X_Coord, float Y_Coord)
+    {
+        x_Coord = X_Coord;
+        y_Coord = Y_Coord;
+    }
+
+public Point()
+    {
+        x_Coord = 0;
+        y_Coord = 0;
+    }
+
+}
